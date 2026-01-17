@@ -145,7 +145,9 @@ export function MindMap({
 
           // Auto-fit if enabled
           if (fit) {
-            mind.scaleFit();
+            setTimeout(() => {
+              mind.scaleFit();
+            }, 10);
           }
 
           // Event listeners
