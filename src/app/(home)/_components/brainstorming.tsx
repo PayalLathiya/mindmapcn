@@ -52,12 +52,12 @@ const brainstormingData: MindElixirData = {
   },
 };
 
-export function Brainstorming() {
+export function Brainstorming({ className }: { className?: string }) {
   const [mindmapData, setMindmapData] = useState(brainstormingData);
   return (
     <ExampleCard
       label="Brainstorming"
-      className="aspect-square"
+      className={className}
       delay="delay-700"
     >
       <MindMap

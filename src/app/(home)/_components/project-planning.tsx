@@ -3,11 +3,12 @@
 import { MindMap, MindMapControls } from "@/registry/mindmap";
 import { ExampleCard } from "./example-card";
 
-const projectPlanningData = {
+import { MindElixirData } from "mind-elixir";
+
+const projectPlanningData: MindElixirData = {
   nodeData: {
     id: "root",
     topic: "Website Redesign",
-    root: true,
     children: [
       {
         id: "research",
@@ -51,9 +52,9 @@ const projectPlanningData = {
   },
 };
 
-export function ProjectPlanning() {
+export function ProjectPlanning({ className }: { className?: string }) {
   return (
-    <ExampleCard label="Project Planning" className="aspect-square" delay="delay-500">
+    <ExampleCard label="Project Planning" className={className} delay="delay-500">
       <MindMap
         data={projectPlanningData}
         direction={1}

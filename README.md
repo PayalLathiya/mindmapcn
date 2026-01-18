@@ -23,7 +23,7 @@
 - 🎨 **Theme-aware** — Automatically adapts to light/dark mode
 - 🎯 **Zero config** — Works out of the box with sensible defaults
 - 📦 **shadcn/ui compatible** — Uses the same patterns and styling conventions
-- 🧠 **Mind Elixir powered** — Full access to Mind Elixir's powerful mind mapping capabilities
+- 🧠 **Mind Elixir powered** — Full access to [Mind Elixir](https://github.com/SSShooter/mind-elixir-core)'s powerful mind mapping capabilities
 - 🧩 **Composable** — Build complex mind map UIs with simple, declarative components
 - 🎮 **Controls** — Zoom, fit to screen, and export controls
 - 📊 **Versatile** — Perfect for organizational charts, project planning, knowledge graphs, brainstorming, and more
@@ -42,6 +42,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+## Acknowledgments
+
+- [mapcn](https://github.com/AnmolSaini16/mapcn)
 
 ## License
 

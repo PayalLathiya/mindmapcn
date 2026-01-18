@@ -81,11 +81,11 @@ const decisionTreeData = {
   },
 };
 
-export function DecisionTree() {
+export function DecisionTree({ className }: { className?: string }) {
   return (
     <ExampleCard
       label="Decision Tree"
-      className="aspect-square"
+      className={className}
       delay="delay-800"
     >
       <MindMap

@@ -67,14 +67,13 @@ const knowledgeGraphData = {
   },
 };
 
-export function KnowledgeGraph() {
+export function KnowledgeGraph({ className }: { className?: string }) {
   return (
-    <ExampleCard label="Knowledge Graph" className="aspect-square" delay="delay-600">
+    <ExampleCard label="Knowledge Graph" className={className} delay="delay-600">
       <MindMap
         data={knowledgeGraphData}
         direction={1}
         className="h-full"
-        monochrome
       >
         <MindMapControls position="top-right" showExport={false} />
       </MindMap>
