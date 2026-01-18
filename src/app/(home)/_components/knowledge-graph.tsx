@@ -2,12 +2,12 @@
 
 import { MindMap, MindMapControls } from "@/registry/mindmap";
 import { ExampleCard } from "./example-card";
+import { MindElixirData } from "mind-elixir";
 
-const knowledgeGraphData = {
+const knowledgeGraphData: MindElixirData = {
   nodeData: {
     id: "root",
     topic: "Web Development",
-    root: true,
     children: [
       {
         id: "frontend",

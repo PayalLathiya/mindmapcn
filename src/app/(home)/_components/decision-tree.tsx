@@ -2,12 +2,12 @@
 
 import { MindMap, MindMapControls } from "@/registry/mindmap";
 import { ExampleCard } from "./example-card";
+import { MindElixirData } from "mind-elixir";
 
-const decisionTreeData = {
+const decisionTreeData: MindElixirData  = {
   nodeData: {
     id: "root",
     topic: "Choose Tech Stack",
-    root: true,
     children: [
       {
         id: "type",
