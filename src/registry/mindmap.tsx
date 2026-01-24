@@ -15,7 +15,7 @@ import {
 import { Minus, Plus, Download, Loader2, Maximize, ScanSearch } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { type MindElixirInstance, type MindElixirData, type NodeObj, type Options, type Theme as MindElixirTheme, SIDE } from "mind-elixir";
+import { type MindElixirInstance, type MindElixirData, type NodeObj, type Options, type Theme as MindElixirTheme } from "mind-elixir";
 import { snapdom } from "@zumer/snapdom";
 
 // Check document class for theme (works with next-themes, etc.)
@@ -279,6 +279,7 @@ function getTheme(isDark: boolean, isMonochrome: boolean): MindElixirTheme {
   return isMonochrome ? lightThemeMonochrome : lightTheme;
 }
 
+const SIDE = 2;
 export const MindMap = forwardRef<MindMapRef, MindMapProps>(function MindMap({
   children,
   data,
