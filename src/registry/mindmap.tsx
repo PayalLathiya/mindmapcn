@@ -15,7 +15,7 @@ import {
 import { Minus, Plus, Download, Loader2, Maximize, ScanSearch } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { type MindElixirInstance, type MindElixirData, type NodeObj, type Options, type Theme as MindElixirTheme } from "mind-elixir";
+import { type MindElixirInstance, type MindElixirData, type NodeObj, type Options, type Theme as MindElixirTheme, SIDE } from "mind-elixir";
 import { snapdom } from "@zumer/snapdom";
 
 // Check document class for theme (works with next-themes, etc.)
@@ -104,9 +104,7 @@ interface MindMapProps {
   data?: MindMapData;
   className?: string;
   direction?: 0 | 1 | 2;
-  draggable?: boolean;
   contextMenu?: boolean;
-  toolBar?: boolean;
   nodeMenu?: boolean;
   keypress?: boolean;
   locale?: "en" | "zh_CN" | "zh_TW" | "ja" | "pt";
@@ -115,6 +113,7 @@ interface MindMapProps {
   theme?: "dark" | "light";
   monochrome?: boolean;
   fit?: boolean;
+  readonly?: boolean;
   onChange?: (data: MindMapData, operation: unknown) => void;
   onOperation?: (operation: unknown) => void;
   onSelectNodes?: (nodeObj: NodeObj[]) => void;
@@ -284,10 +283,8 @@ export const MindMap = forwardRef<MindMapRef, MindMapProps>(function MindMap({
   children,
   data,
   className,
-  direction = 1, // MindElixir.SIDE
-  draggable = true,
+  direction = SIDE,
   contextMenu = true,
-  toolBar = false,
   nodeMenu = true,
   keypress = true,
   locale = "en",
@@ -296,6 +293,7 @@ export const MindMap = forwardRef<MindMapRef, MindMapProps>(function MindMap({
   theme: themeProp,
   monochrome = false,
   fit = true,
+  readonly = false,
   onChange,
   onOperation,
   onSelectNodes,
@@ -356,14 +354,14 @@ export const MindMap = forwardRef<MindMapRef, MindMapProps>(function MindMap({
       const options = {
         el: containerRef.current,
         direction,
-        draggable,
         contextMenu,
-        toolBar,
+        toolBar: false,
         nodeMenu,
         keypress,
         locale,
         overflowHidden,
         mainLinkStyle,
+        editable: !readonly,
         alignment: "nodes",
         theme:
           getTheme(resolvedThemeRef.current === "dark", monochrome),
@@ -424,15 +422,14 @@ export const MindMap = forwardRef<MindMapRef, MindMapProps>(function MindMap({
   }, [
     isMounted,
     direction,
-    draggable,
     contextMenu,
-    toolBar,
     nodeMenu,
     keypress,
     locale,
     overflowHidden,
     mainLinkStyle,
     monochrome,
+    readonly,
     fit,
   ]);
 
