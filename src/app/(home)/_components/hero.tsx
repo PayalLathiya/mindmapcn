@@ -37,11 +37,10 @@ export function Hero() {
     <div className="space-y-8">
       <div className="text-center space-y-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight animate-fade-up">
-          Beautiful mind maps, made simple.
+          Beautiful mind maps, effortlessly
         </h1>
         <p className="text-foreground/80 text-lg max-w-xl mx-auto animate-fade-up delay-100">
-          Beautifully designed, Open source mind map components. Zero config. One
-          command setup.
+          Beautiful, open-source mind map components. One command to install, zero config to start.
         </p>
       </div>
 
@@ -60,7 +59,7 @@ export function Hero() {
           </Link>
         </Button>
         <Button variant="outline" size="lg" asChild>
-          <Link href="/docs/basic-map">View Examples</Link>
+          <Link href="/docs/usage">Explore Examples</Link>
         </Button>
       </div>
     </div>
