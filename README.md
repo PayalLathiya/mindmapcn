@@ -1,12 +1,11 @@
 <div align="center">
   <img src="public/banner.png" alt="mindmapcn banner" />
   
-  <h1>mindmapcn</h1>
-  <p><strong>Beautiful mind maps, made simple.</strong></p>
+  <p><strong>Beautiful mind maps, effortlessly.</strong></p>
   
   <p>
-    Free & open source mind map components. Zero config, one command setup.<br/>
-    Built on <a href="https://github.com/SSShooter/mind-elixir-core">Mind Elixir</a>, styled with <a href="https://tailwindcss.com/">Tailwind</a>, works seamlessly with <a href="https://ui.shadcn.com/">shadcn/ui</a>.
+    Beautiful mind map components based on <a href="https://github.com/SSShooter/mind-elixir-core">Mind Elixir</a>. One command to install, zero config to start.<br/>
+    Styled with <a href="https://tailwindcss.com/">Tailwind</a>, works seamlessly with <a href="https://ui.shadcn.com/">shadcn/ui</a>.
   </p>
   
   <p>
