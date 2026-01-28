@@ -6,6 +6,7 @@ import {
   DocsSection,
 } from "../_components/docs";
 import { CodeBlock } from "../_components/code-block";
+import { InstallCodeBlock } from "../_components/install-code-block";
 import { Metadata } from "next";
 import { MindMap, MindMapControls } from "@/registry/mindmap";
 
@@ -51,7 +52,7 @@ export default function InstallationPage() {
 
       <DocsSection title="Installation">
         <p>Run the following command to add the mind map component:</p>
-        <CodeBlock code={installCode} language="bash" />
+        <InstallCodeBlock command={installCode} showPrompt={false} />
         <p>
           This will install <DocsCode>mind-elixir</DocsCode> and add the MindMap
           component to your project.
