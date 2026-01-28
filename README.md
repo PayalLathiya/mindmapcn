@@ -43,7 +43,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
+- [shadcn/ui](https://github.com/shadcn-ui/ui)
 - [mapcn](https://github.com/AnmolSaini16/mapcn)
+- [@zumer/snapdom](https://github.com/zumerlab/snapdom)
 
 ## License
 

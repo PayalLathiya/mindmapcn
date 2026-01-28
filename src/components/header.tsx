@@ -21,7 +21,7 @@ export function Header({ className, leftContent }: HeaderProps) {
             href="/"
             className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
           >
-            <img src="icon.png" alt="mindmapcn icon" className="size-6" />
+            <img src="/icon.png" alt="mindmapcn icon" className="size-6" />
             <span className="font-semibold tracking-tight">mindmapcn</span>
           </Link>
         </div>
